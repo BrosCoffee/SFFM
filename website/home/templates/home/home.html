@@ -1,0 +1,64 @@
+{% extends "home/layout.html" %}
+{% block content %}
+{% load static %}
+<div class="container mt-3 mb-4">
+    <div class="row justify-content-center">
+      <div class="col-auto mt-4 mr-4">
+          <div class="card" style="width: 14rem;">
+            <img src="{% static 'home/mask_01_side.jpg' %}" alt="My image" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#">Black</a> $8</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-auto mt-4 mr-4">
+          <div class="card" style="width: 14rem;">
+            <img src="{% static 'home/mask_02_side.jpg' %}" alt="My image" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#">Navy Green</a> $7</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-auto mt-4 mr-4">
+          <div class="card" style="width: 14rem;">
+            <img src="{% static 'home/mask_03_side.jpg' %}" alt="My image" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#">Beige</a> $7</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-auto mt-4 mr-4">
+          <div class="card" style="width: 14rem;">
+            <img src="{% static 'home/mask_04_side.jpg' %}" alt="My image" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#">Light Brown</a> $7</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-auto mt-4 mr-4">
+          <div class="card" style="width: 14rem;">
+            <img src="{% static 'home/mask_05_side.jpg' %}" alt="My image" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#">Gray Plaid</a> $7</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-auto mt-4 mr-4">
+          <div class="card" style="width: 14rem;">
+            <img src="{{MEDIA_URL}}{{images.image_1.name}}" alt="My image" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"><a href="#">{{images.name}}</a> ${{images.price}}</h5>
+              <p class="card-text">{{images.description}}</p>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+{% endblock content %}

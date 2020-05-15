@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to SFFM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home/main.css' %}">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              Silver Fiber Face Mask
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link ml-3" href="#">New<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link ml-3" href="#">Women</a>
+                <a class="nav-item nav-link ml-3" href="#">Men</a>
+                <a class="nav-item nav-link ml-3" href="#">Customization</a>
+                <a class="nav-item nav-link ml-3" href="#">Sales</a>
+              </div>
+            </div>
+            <a class="nav-item nav-link" href="#"><svg class="bi bi-person-fill" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+            </svg> <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#"><svg class="bi bi-archive" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2 5v7.5c0 .864.642 1.5 1.357 1.5h9.286c.715 0 1.357-.636 1.357-1.5V5h1v7.5c0 1.345-1.021 2.5-2.357 2.5H3.357C2.021 15 1 13.845 1 12.5V5h1z" clip-rule="evenodd"/>
+            <path fill-rule="evenodd" d="M5.5 7.5A.5.5 0 016 7h4a.5.5 0 010 1H6a.5.5 0 01-.5-.5zM15 2H1v2h14V2zM1 1a1 1 0 00-1 1v2a1 1 0 001 1h14a1 1 0 001-1V2a1 1 0 00-1-1H1z" clip-rule="evenodd"/>
+            </svg><span class="sr-only">(current)</span></a>
+            <div class="navbar-brand">
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" aria-label="Search">
+                <button class="btn-light btn-sm btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+              </form>  
+            </div>
+          </div>
+        </nav>
+    </header>
+    {% block content %}{% endblock %}
+    <footer>
+      <div style="background-color: #eee;">
+        <div class="container">
+          <div class="row pt-3">
+            <div class="col-lg-4">
+              <ul>
+                <li><h5>Customer Care</h5></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Order status</a></li>
+                <li><a href="#">Returns &#38; Exchanges</a></li>
+                <li><a href="#">Product Care &#38; Repairs</a></li>
+                <li><a href="#">Feedback</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <ul>
+                <li><h5>About us</h5></li>
+                <li><a href="#">SFFM story</a></li>
+                <li><a href="#">Made in Taiwan</a></li>
+                <li><a href="#">Donation to COVID-19</a></li>
+                <li><a href="#">Sponsor SFFM</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 font-1">
+              <h2>SFFM</h2>
+              <p>
+                bagar erhaeh aeharhae rhargaerhaer haerhe agargarga argasavaw avav
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center font-1 pb-2" style="background-color: #eee;">
+        &copy; 2020 copyright by SFFM
+      </div>
+    </footer>
+</body>
+</html>
